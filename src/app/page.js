@@ -15,6 +15,7 @@ export default function Home() {
     const [answer, setAnswer] = useState('');
     const [resultMessage, setResultMessage] = useState('');
     const [buttonText, setButtonText] = useState('Verificar');
+    const [resultClass, setResultClass] = useState('');
 
     const generateNewQuestion = () => {
       const newNum1 = Math.floor(Math.random() * 10) + 1;
@@ -23,6 +24,7 @@ export default function Home() {
       setNum2(newNum2);
       setAnswer('');
       setResultMessage('');
+      setResultClass('');
       setButtonText('Verificar');
     };
 
@@ -38,15 +40,18 @@ export default function Home() {
         if (buttonText === 'Verificar') {
             if (answer.trim() === '') {
                 setResultMessage('Você precisa colocar um numero!');
+                setResultClass('incorrect');
                 return;
             }
 
             const correct = num1 * num2;
             if (parseInt(answer, 10) === correct) {
                 setResultMessage('O seu numero esta certo.');
+                setResultClass('correct');
                 setButtonText('Continuar');
             } else {
                 setResultMessage('O seu numero esta errado.');
+                setResultClass('incorrect');
             }
         } else if (buttonText === 'Continuar') {
             generateNewQuestion();
@@ -75,7 +80,7 @@ export default function Home() {
         <input className="questionInput" value={answer} onChange={(e) => setAnswer(e.target.value)} onKeyDown={handleKeyDown} type="number" name="result" placeholder="Coloque o resultado." id="result"></input>
       </div>
 
-      <p className="result" id="result">{resultMessage}</p>
+      <p className={`result ${resultClass}`} id="result">{resultMessage}</p>
 
       <div className="button-container">
         <button onClick={handleButtonClick} id="questionButton" className="questionButton">{buttonText}</button>

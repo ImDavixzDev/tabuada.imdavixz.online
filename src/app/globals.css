@@ -5,6 +5,14 @@ body {
   font-family: "Press Start 2P", system-ui;
 }
 /* FEITO POR IMDAVIXZ. */
+.correct {
+  color: green;
+}
+/* FEITO POR IMDAVIXZ. */
+.incorrect {
+  color: red;
+}
+/* FEITO POR IMDAVIXZ. */
 body::selection {
   background-color: #fff;
   color: #141414;
@@ -98,7 +106,6 @@ footer > .subtitle:hover {
 }
 /* FEITO POR IMDAVIXZ. */
 .result {
-  color: #fff;
   text-align: center;
   margin-top: 40px;
   visibility: visible;
