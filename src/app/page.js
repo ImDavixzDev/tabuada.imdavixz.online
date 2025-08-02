@@ -8,7 +8,7 @@ import Link from "next/link"
 import { useState, useEffect } from 'react';
 
 export default function Home() {
-    /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
 
     const [num1, setNum1] = useState(0);
     const [num2, setNum2] = useState(0);
@@ -26,13 +26,13 @@ export default function Home() {
       setButtonText('Verificar');
     };
 
-    /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
 
     useEffect(() => {
       generateNewQuestion();
     }, []);
 
-    /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
 
     const handleButtonClick = () => {
         if (buttonText === 'Verificar') {
@@ -53,25 +53,24 @@ export default function Home() {
         }
     };
 
-    /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             handleButtonClick();
         }
     };
-  /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
   return (
     <div>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
       </style>
-      <meta charset = "UTF-8"></meta>
 
       <header>
         <h1 className="title">Verificador Tabuada</h1>
         <p className="subtitle">Por: Davi</p>
-        <Image className="tungtung" src="/TungTung.png" width={64} height={64}></Image>
+        <Image alt="tungtung" className="tungtung" src="/TungTung.png" width={64} height={64}></Image>
       </header>
 
       <div className="question">
@@ -85,8 +84,12 @@ export default function Home() {
       <div className="button-container">
         <button onClick={handleButtonClick} id="questionButton" className="questionButton">{buttonText}</button>
       </div>
+
+      <footer>
+        <Link className="subtitle" href="https://github.com/ImDavixzDev/tabuada.imdavixz.online">Github</Link>
+      </footer>
     </div>
   );
 }
 
-  /* FEITO POR IMDAVIXZ. */
+/* FEITO POR IMDAVIXZ. */
