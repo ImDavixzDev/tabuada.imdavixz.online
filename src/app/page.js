@@ -63,10 +63,6 @@ export default function Home() {
 /* FEITO POR IMDAVIXZ. */
   return (
     <div>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-      </style>
-
       <header>
         <h1 className="title">Verificador Tabuada</h1>
         <p className="subtitle">Por: Davi</p>
