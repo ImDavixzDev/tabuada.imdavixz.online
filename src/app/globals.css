@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+body {
+  background-color: #141414;
+  font-family: "Press Start 2P", system-ui;
+}
+  /* FEITO POR IMDAVIXZ. */
+body::selection {
+  background-color: #fff;
+  color: #141414;
+  padding: 5px 10px;
+}
+  /* FEITO POR IMDAVIXZ. */
+.emoji {
+  font-size: 20px;
+}
+  /* FEITO POR IMDAVIXZ. */
+.tungtung {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  /* FEITO POR IMDAVIXZ. */
+header {
+  text-align: center;
+}
+  /* FEITO POR IMDAVIXZ. */
+header > h1 {
+  color: #fff;
+  font-size: 25px;
+  margin-top: 50px;
+}
+  /* FEITO POR IMDAVIXZ. */
+header > p {
+  color: #b9b9b9;
+}
+  /* FEITO POR IMDAVIXZ. */
+.questionText {
+  color: #eeeeee;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  /* FEITO POR IMDAVIXZ. */
+.question {
+  text-align: center;
+  margin-top: 35px;
+}
+  /* FEITO POR IMDAVIXZ. */
+.questionInput {
+  background-color: #b9b9b9;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: #999999 2px;
+  margin-top: 20px;
+}
+  /* FEITO POR IMDAVIXZ. */
+.questionInput::placeholder {
+  color: #999999;
+}
+  /* FEITO POR IMDAVIXZ. */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+  /* FEITO POR IMDAVIXZ. */
+.questionButton {
+  color: #141414;
+  background-color: #b9b9b9;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: #141414 2px;
+  cursor: pointer;
+}
+  /* FEITO POR IMDAVIXZ. */
+.result {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  visibility: visible;
+}  /* FEITO POR IMDAVIXZ. */
